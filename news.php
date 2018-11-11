@@ -1,7 +1,6 @@
 <?php
- __autoload($name){
-    include ($name.'.class.php')
-}
+    include_once 'NewsDB.class.php';
+
 $errMsg = "";
 if ($_SERVER['REQUEST_METHOD'] == 'POST')
     require ('save_news.inc.php');

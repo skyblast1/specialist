@@ -1,7 +1,6 @@
 <?php
-function __autoload($class) {
-    include $class.'.class.php';
-}
+include_once 'INewsDB.class.php';
+
 class NewsDB implements INewsDB {
     const DB_NAME = 'news.db';
     private $_db;
@@ -42,7 +41,7 @@ class NewsDB implements INewsDB {
 
     function saveNews($title, $category, $description, $source){
         $dt = time();
-        $sql = "INSERT INTO msgs(title, category, description, source, datetime) VALUES ($title, $category, $description, $source, $dt)";
+        $sql = "INSERT INTO msgs('title', 'category', 'description', 'source', 'datetime') VALUES ('$title', $category, '$description', '$source', $dt)";
         return $this->_db->query($sql);
     }
     function getNews(){}

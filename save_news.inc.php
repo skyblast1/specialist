@@ -1,4 +1,6 @@
 <?php
+include_once 'NewsDB.class.php';
+
 //function __autoload($name){
 //    require ($name.'class.php');
 //}
