@@ -10,6 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 <head>
 	<title>Новостная лента</title>
 	<meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Последние новости</h1>
