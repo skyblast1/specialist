@@ -1,6 +1,8 @@
 body {
-    background: red;
+    background: green;
+    font: bold italic 100% serif;
 }
+
 h1 {
     font: bold italic 110% serif;
 }
